@@ -11,26 +11,13 @@
 #include <stdarg.h>
 #define BUFFER 1000
 
-/**
- * struct fto - the funtion is struct of the typedef struct
- * @fto: the identificator to format
- * @p: called ot the funtion punters
- * specif_fto struct - the funtion is struct of the typedef struct
- */
-
-typedef struct fto
-{
-	char *fto;
-	int (*p)(va_list args);
-} specif_fto;
-
-struct stat st;
 int main(void);
+struct stat st;
 void call_function(char *buffer);
 void copy_cat(int len, char **arr);
 int f_exit(va_list args);
 int _chdir(va_list args);
-int st_command(char *buffer, ...);
+int st_command(char *buffer);
 int find_char(char *s, int c);
 char **getarr(char *buffer, int len);
 char *_getline(void);
@@ -46,4 +33,3 @@ size_t _strspn(char *str, const char *accept);
 char *_strtok(char *str, const char *separator);
 
 #endif
-
