@@ -19,7 +19,7 @@ Write a README, man and authors of project. The latter in Docker format
 Write a beautiful code that passes the Betty checks
 
 ### Task 3: Simple shell 0.1
-Write a UNIX command line interpreter. 
+Write a UNIX command line interpreter.
 #### Example:
 ```
 simple-shell$ /bin/ls
@@ -44,4 +44,3 @@ Simple shell 0.3 + Implement the exit built-in, without arguments.
 
 
 *Developed by Edison Isaza and Kimberly Hinostroza for Holberton School.*
-~                                                                      
