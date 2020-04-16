@@ -15,8 +15,6 @@ int main(void);
 struct stat st;
 void call_function(char *buffer);
 void copy_cat(int len, char **arr);
-int f_exit(va_list args);
-int _chdir(va_list args);
 int st_command(char *buffer);
 int find_char(char *s, int c);
 char **getarr(char *buffer, int len);
