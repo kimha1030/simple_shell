@@ -2,7 +2,7 @@
 
 /**
  * _getline - Function that allows to get the input
- * 
+ *
  * Return: buffer.
  **/
 
