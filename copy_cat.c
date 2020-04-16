@@ -39,9 +39,9 @@ void copy_cat(int len, char **arr)
 	}
 	else
 	{
-		fprintf(stderr, "%s: No such file or directory\n", arr[0]);
-		exit(EXIT_FAILURE);
+		printf("%s: No such file or directory\n", arr[0]);
 	}
 	free(str);
 	free(strc);
 }
+
