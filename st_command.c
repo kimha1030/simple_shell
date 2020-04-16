@@ -2,39 +2,16 @@
 
 /**
  * st_command - Function that allows us to choose the cd command or exit
- * @buffer: pointer to string
- * Return: integer
+ * @buffer1: pointer to string
+ * Return: 0
  **/
+#include "holberton.h"
 
-int st_command(char *buffer, ...)
+int st_command(char *buffer1)
 {
-	va_list args;
-	int j, i;
-
-	specif_fto arbi[] = {
-		{"exit", f_exit},
-		{"cd", _chdir},
-		{NULL, NULL}
-	};
-	if (buffer == NULL)
-		return (-1);
-	va_start(args, buffer);
-	for (i = 0; buffer[i]; i++)
-	{
-		for (j = 0; arbi[j].fto; j++)
-		{
-			if (buffer[i] == *(arbi[j]).fto)
-			{
-				arbi[j].p(args);
-				return (1);
-			}
-			else
-			{
-				process(buffer);
-				return (2);
-			}
-		}
-	}
-	va_end(args);
+	if (strcmp(buffer1, "exit\n") == 0)
+		exit(0);
+	else if (strcmp(buffer1, "exit\n") != 0)
+		process(buffer1);
 	return (0);
 }
