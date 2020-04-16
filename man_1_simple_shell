@@ -16,7 +16,7 @@ A space or tab
 .br
 .B word
 A single unit of characters or token
-.br  
+.br
 .SH SIMPLE COMMANDS
 THis refers to a sequence of several options, followed words separated by blanks.
 .br
