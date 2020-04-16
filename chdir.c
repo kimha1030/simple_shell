@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * chdir - Function that move to current directory
+ * _chdir - Function that move to current directory
  * @args: list of variable arguments
  * Return: Always 0.
  **/
