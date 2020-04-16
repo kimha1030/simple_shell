@@ -1,0 +1,27 @@
+.TH SIMPLE_SHELL 1 "15 April 2020" "1.0" "Man page for Simple Shell"
+.SH NAME
+simple_shell - Unix command line interpreter
+.br
+.SH SYNOPSIS
+simple_shell
+.br
+.SH DESCRIPTION
+simple_shell is a UNIX command line interpreter that allows us to enter a simple command line (input) in a terminal and obtain the corresponding output. It should be noted that the standard location of the available commands or executable files or commands is: /bin/
+.br
+After compiling and executing the shell with the flags *(gcc -Wall -Werror -Wextra -pedantic *.c -o hsh)*, simple commands are entered and the output is verified.
+.br
+.SH DEFINITIOMS
+.B blank
+A space or tab
+.br
+.B word
+A single unit of characters or token
+.br  
+.SH SIMPLE COMMANDS
+THis refers to a sequence of several options, followed words separated by blanks.
+.br
+.SH EXECUTION OF COMMANDS
+Initialially words are separated by blanks. The first word specifies the command to be executed, and is passed as argument zero (arr[0]). The other words are part of the arguments and are stored. Subsequently, it is verified if the slash (/) separator exists in the simple command (arr [0]). If it exists, it indicates that the simple command contains a path name, from which the base name must be extracted.Then, it continues with the execution of the command (which can also correspond to the base name). After execution the prompt is displayed again.
+.br
+.SH AUTHOR
+Edison Isaza, Kimberly Hinostroza for Holberton School
