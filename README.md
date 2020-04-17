@@ -45,10 +45,10 @@ Simple shell 0.3 + Implement the exit built-in, without arguments.
 
 ## Installation
 To use this shell, you must follow these steps:
-1- Clone this repository.
-2- Compile all the .c files, using the gcc command and the respective flags, that is: gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
-3- Subsequently, run the executable file, writing in the command line: ./hsh
-4- After the above, you can see the command line, in which you can enter commands and observe the obtained output.
+1. Clone this repository.
+2. Compile all the .c files, using the gcc command and the respective flags, that is: gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+3. Subsequently, run the executable file, writing in the command line: ./hsh
+4. After the above, you can see the command line, in which you can enter commands and observe the obtained output.
 
 
 *Developed by Edison Isaza and Kimberly Hinostroza for Holberton School*
