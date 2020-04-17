@@ -21,5 +21,4 @@ int st_command(char *buffer1)
 		process(buffer1);
 	}
 	return (0);
-	
 }
