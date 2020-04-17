@@ -7,7 +7,7 @@ This project is our version of the Shell, developed for educational purposes, fo
 
 simple_shell is a UNIX command line interpreter that allows us to enter a simple command line (input) in a terminal and obtain the corresponding output. It should be noted that the standard location of the available commands or executable files or commands is: /bin/
 
-After compiling and executing the shell with the flags *(gcc -Wall -Werror -Wextra -pedantic *.c -o hsh)*, simple commands are entered and the output is verified.
+After compiling the shell with the flags of gcc: gcc -Wall -Werror -Wextra -pedantic *.c -o hsh and then, execute, you can enter a simple commands and see the output. However, at the end of this text, you can see the detailed steps for the installation of this shell.
 
 
 ## Tasks
@@ -43,4 +43,12 @@ simple-shell$ ls -l /tmp
 Simple shell 0.3 + Implement the exit built-in, without arguments.
 
 
-*Developed by Edison Isaza and Kimberly Hinostroza for Holberton School.*
+## Installation
+To use this shell, you must follow these steps:
+1- Clone this repository.
+2- Compile all the .c files, using the gcc command and the respective flags, that is: gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+3- Subsequently, run the executable file, writing in the command line: ./hsh
+4- After the above, you can see the command line, in which you can enter commands and observe the obtained output.
+
+
+*Developed by Edison Isaza and Kimberly Hinostroza for Holberton School*
