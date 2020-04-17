@@ -22,9 +22,6 @@ char *_getline(void)
 		}
 		free(buffer);
 		exit(0);
-		buffer = NULL;
 	}
-	free(buffer);
-	buffer = NULL;
 	return (buffer);
 }
