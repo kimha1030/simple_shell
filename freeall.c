@@ -4,7 +4,6 @@
  * freeall - free the funtions
  * @str1: the punters at free
  * @str2: the punters at free
- * @str3: the punters at free
  * Return: dest
  */
 
