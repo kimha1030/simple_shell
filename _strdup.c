@@ -17,10 +17,7 @@ char *_strdup(const char *s)
 	}
 	else
 	{
-		while (s[x] != '\0')
-		{
-			x++;
-		}
+		x = _strlen(s);
 		n = malloc(sizeof(char) * (x + 1));
 		if (n == NULL)
 		{
@@ -34,7 +31,6 @@ char *_strdup(const char *s)
 				y++;
 			}
 			return (n);
-			free(n);
 		}
 	}
 }
