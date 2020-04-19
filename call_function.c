@@ -14,6 +14,4 @@ void call_function(char *buffer)
 	len = _strlen(buffer);
 	arr = getarr(buffer, len);
 	copy_cat(len, arr);
-	free(arr);
-	free(buffer);
 }

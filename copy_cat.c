@@ -2,7 +2,7 @@
 
 /**
  * copy_cat - copy and cat
- * @len: is long of the characters
+ * @len: lenght of the string
  * @arr: the charaters is the definitive of the call a the funtion
  * Return: dest
  */
@@ -39,10 +39,11 @@ void copy_cat(int len, char **arr)
 	}
 	else
 	{
-		fprintf(stderr, "%s: No such file or directory\n", arr[0]);
-		fflush(stderr);
+		printf("%s: No such file or directory\n", arr[0]);
+		freeall(str, strc);
 		exit(EXIT_FAILURE);
 	}
-	free(str);
-	free(strc);
+	freeall(str, strc);
+	free(arr);
+	arr = NULL;
 }
