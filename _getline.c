@@ -9,10 +9,10 @@
 char *_getline(void)
 {
 	ssize_t tmp;
-	char *buffer = NULL;
+	char *line = NULL;
 	size_t i  = 0;
 
-	tmp = getline(&buffer, &i, stdin);
+	tmp = getline(&line, &i, stdin);
 	fflush(stdin);
 	if (tmp == EOF)
 	{
@@ -20,8 +20,11 @@ char *_getline(void)
 		{
 			write(1, "\n", 1);
 		}
-		free(buffer);
+		free(line);
+		line = NULL;
 		exit(0);
 	}
-	return (buffer);
+	return (line);
+	free(line);
+	line = NULL;
 }

@@ -19,7 +19,7 @@ int st_command(char *buffer);
 int find_char(char *s, int c);
 char **getarr(char *buffer, int len);
 char *_getline(void);
-void process(char *buffer);
+int process(char *buffer);
 char *_strcat(char *dest, char *src);
 int _strcmp(char *s1, char *s2);
 char *_strcpy(char *dest, char *src);
@@ -29,5 +29,7 @@ char *_strpbrk(char *s, const char *accept);
 char *_strrchr(char *s, int c);
 size_t _strspn(char *str, const char *accept);
 char *_strtok(char *str, const char *separator);
+void freeall(char *str1, char *str2);
+void check_signal(int sig_num);
 
 #endif

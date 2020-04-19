@@ -16,6 +16,8 @@ char **getarr(char *buffer, int len)
 	if (arr == NULL)
 		perror("error: ");
 	token = _strdup(buffer);
+	free(buffer);
+	buffer = NULL;
 	value = _strtok(token, " \n\t");
 	x = 0;
 	while (value != NULL)
@@ -24,8 +26,9 @@ char **getarr(char *buffer, int len)
 		value = _strtok(NULL, " \n\t");
 		x++;
 	}
-	return (arr);
-	free(arr);
 	free(token);
+	token = NULL;
 	free(value);
+	value = NULL;
+	return (arr);
 }

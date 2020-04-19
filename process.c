@@ -6,7 +6,7 @@
  * Return: void
  */
 
-void process(char *buffer)
+int process(char *buffer)
 {
 	pid_t child_pid;
 	int status;
@@ -18,12 +18,15 @@ void process(char *buffer)
 		exit(EXIT_FAILURE);
 	}
 	else if (child_pid == 0)
+	{
 		call_function(buffer);
+	}
 	else
 	{
+		free(buffer);
+		buffer = NULL;
 		waitpid(-1, &status, WUNTRACED);
 		main();
 	}
-	free(buffer);
+	return (0);
 }
-
